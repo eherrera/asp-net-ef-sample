@@ -2,6 +2,7 @@
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
+
 namespace ContosoUniversity.DAL
 {
     public class SchoolContext : DbContext
@@ -13,6 +14,8 @@ namespace ContosoUniversity.DAL
         public DbSet<Student> Students { get; set; }
         public DbSet<OfficeAssignment> OfficeAssignments { get; set; }
         public DbSet<Person> People { get; set; }
+
+        public DbSet<Company> Companies { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
